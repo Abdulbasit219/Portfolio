@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+body{
+  background-color: #e9eaec;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+@layer base {
+   .font-Brush-Script-MT {
+    font-family: "Brush Script MT", cursive;
+  }
+}
