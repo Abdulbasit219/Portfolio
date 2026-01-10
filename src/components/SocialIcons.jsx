@@ -13,28 +13,12 @@ const SocialIcons = () => {
         <Linkedin />
       </a>
       <a
-        href="https://github.com/Abdulbasit219/Farmers-Sol"
+        href="https://github.com/Abdulbasit219"
         target="_blank"
         title="Facebook"
         className="bg-[#8228FF] p-2 rounded-full transition-all duration-300 hover:bg-[#DCDDDF] border-2 border-[#8228FF] hover:text-[#8228FF]"
       >
         <Github />
-      </a>
-      <a
-        href=""
-        target="_blank"
-        title="Instagram"
-        className="bg-[#8228FF] p-2 rounded-full transition-all duration-300 hover:bg-[#DCDDDF] border-2 border-[#8228FF] hover:text-[#8228FF]"
-      >
-        <Instagram />
-      </a>
-      <a
-        href=""
-        target="_blank"
-        title="Twitter"
-        className="bg-[#8228FF] p-2 rounded-full transition-all duration-300 hover:bg-[#DCDDDF] border-2 border-[#8228FF] hover:text-[#8228FF]"
-      >
-        <Twitter />
       </a>
     </div>
   );
