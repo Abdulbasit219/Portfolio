@@ -30,7 +30,7 @@ const HeroSection = () => {
                 Hire Me
               </a>
 
-              <a href="/resume.pdf" download="Abdul-Basit-resume.pdf" className="flex items-center justify-center gap-2 transition-all duration-300 rounded-2xl border-2 border-[#8228FF] p-5 py-3 font-semibold text-[#8228FF] hover:bg-[#8228FF] hover:text-white cursor-pointer">
+              <a href="/Abdul-Basit-resume.pdf" download="Abdul-Basit-resume.pdf" className="flex items-center justify-center gap-2 transition-all duration-300 rounded-2xl border-2 border-[#8228FF] p-5 py-3 font-semibold text-[#8228FF] hover:bg-[#8228FF] hover:text-white cursor-pointer">
                 Resume
                 <ArrowDownToLine />
               </a>
