@@ -1,15 +1,21 @@
 @import "tailwindcss";
 
-body{
-  background-color: #e9eaec;
-}
-html {
-  scroll-behavior: smooth;
-}
-
+@custom-variant dark (&:where(.dark, .dark *));
 
 @layer base {
-   .font-Brush-Script-MT {
+  body {
+    @apply bg-[#e9eaec] text-gray-900 transition-colors duration-300;
+  }
+
+  .dark body {
+    @apply bg-gray-950 text-gray-100;
+  }
+
+  .font-Brush-Script-MT {
     font-family: "Brush Script MT", cursive;
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }
