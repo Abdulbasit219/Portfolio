@@ -85,8 +85,8 @@ const HeroSection = () => {
               <motion.a
                 whileHover={{ scale: 1.08 }}
                 whileTap={{ scale: 0.95 }}
-                href="/Abdul-Basit-resume.pdf"
-                download="Abdul-Basit-resume.pdf"
+                href="/ABDUL BASIT-resume.pdf"
+                download="ABDUL BASIT-resume.pdf"
                 className="flex items-center justify-center gap-2
                 rounded-2xl border-2 border-[#8228FF]
                 py-3 px-6 font-semibold text-[#8228FF]
