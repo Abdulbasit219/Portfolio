@@ -1,10 +1,10 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
-import emailjs from "@emailjs/browser"; // Make sure EmailJS SDK is installed
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const formRef = useRef();
-  const [status, setStatus] = useState(""); // '', 'success', 'error'
+  const [status, setStatus] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -14,13 +14,11 @@ const Contact = () => {
     const subject = form.subject.value;
     const message = form.message.value;
 
-    // Basic front-end validation
     if (!email || !subject || !message) {
       setStatus("error");
       return;
     }
 
-    // Simple email regex check
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
       setStatus("error");
@@ -29,20 +27,20 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_ej6gajl", // Your Service ID
-        "template_szdx47a", // Your Template ID
-        formRef.current, // form reference
-        "GhUCqpZ3DpTbHXRy3" // Your User ID / Public Key
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        formRef.current,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       )
       .then(
         (result) => {
           console.log(result.text);
-          setStatus("success"); // show success message
-          form.reset(); // clear the form
+          setStatus("success");
+          form.reset();
         },
         (error) => {
           console.log(error.text);
-          setStatus("error"); // show error message
+          setStatus("error");
         }
       );
   };

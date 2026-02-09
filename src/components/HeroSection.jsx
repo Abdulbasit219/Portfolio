@@ -15,9 +15,9 @@ const textVariant = {
 
 const HeroSection = () => {
   return (
-    <section id="home">
+    <section id="home" className="relative z-10">
       <div
-        className="h-[90vh] lg:h-[80vh] flex items-center justify-center mb-12 p-5
+        className="h-[100vh] lg:h-[80vh] flex items-center justify-center mb-12 p-5
         shadow-md rounded-lg
          dark:bg-gray-950
         transition-colors duration-300"
@@ -115,7 +115,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="relative"
+            className="relative z-0"
           >
             <motion.img
               src={picture}
