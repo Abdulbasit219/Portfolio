@@ -6,19 +6,13 @@ import Employeemgt from "../assets/Employeemgt.png";
 import Blog from "../assets/Blog.png";
 import TodoApp from "../assets/TodoApp.png";
 import GPA from "../assets/GPA.png";
-import DocuTool from "../assets/DocuTool.png"
-import UpSkaleAI from "../assets/UpSkaleAI.png"
+import UpSkaleAI from "../assets/UpSkaleAI.png";
 
 const projects = [
   {
     name: "UpSkaleAI",
     image: UpSkaleAI,
     link: "https://my-skillbridge.vercel.app/"
-  },
-  {
-    name: "DocuTool",
-    image: DocuTool,
-    link: "https://docu-tool-pi.vercel.app/"
   },
   {
     name: "SabzLink",
