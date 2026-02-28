@@ -1,8 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
-import picture from "../assets/picture.png";
 import { ArrowDownToLine } from "lucide-react";
 import SocialIcons from "./SocialIcons";
+import picture from "../assets/picture.png";
 
 const textVariant = {
   hidden: { opacity: 0, y: 40 },

@@ -1,47 +1,40 @@
 import React from "react";
 import { motion } from "framer-motion";
-import sabzlink from "../assets/sabzlink.png";
-import Ecommerce from "../assets/Ecommerce.png";
-import Employeemgt from "../assets/Employeemgt.png";
-import Blog from "../assets/Blog.png";
-import TodoApp from "../assets/TodoApp.png";
-import GPA from "../assets/GPA.png";
-import UpSkaleAI from "../assets/UpSkaleAI.png";
 
 const projects = [
   {
     name: "UpSkaleAI",
-    image: UpSkaleAI,
+    imageUrl: "https://res.cloudinary.com/dub3bkaln/image/upload/v1772265503/UpSkaleAI_dxvkmg.png",
     link: "https://my-skillbridge.vercel.app/"
   },
   {
     name: "SabzLink",
-    image: sabzlink,
+    imageUrl: "https://res.cloudinary.com/dub3bkaln/image/upload/v1772265506/sabzlink_jfvddf.png",
     link: "https://farmers-sol-3.onrender.com",
   },
   {
     name: "Ecommerce",
-    image: Ecommerce,
+    imageUrl: "https://res.cloudinary.com/dub3bkaln/image/upload/v1772265500/Ecommerce_h8fzwm.png",
     link: "https://ecommerce-mern-stack-project.netlify.app/",
   },
   {
     name: "Employee Management",
-    image: Employeemgt,
+    imageUrl: "https://res.cloudinary.com/dub3bkaln/image/upload/v1772265500/Employeemgt_sved5n.png",
     link: "https://empmngmntsystem.netlify.app/",
   },
   {
     name: "Blog App",
-    image: Blog,
+    imageUrl: "https://res.cloudinary.com/dub3bkaln/image/upload/v1772265504/Blog_q43ffc.png",
     link: "https://elaborate-capybara-b1bfd3.netlify.app/",
   },
   {
     name: "Todo App",
-    image: TodoApp,
+    imageUrl: "https://res.cloudinary.com/dub3bkaln/image/upload/v1772265500/TodoApp_rv0979.png",
     link: "https://adorable-yeot-bf36c2.netlify.app/",
   },
   {
     name: "GPA Calculator",
-    image: GPA,
+    imageUrl: "https://res.cloudinary.com/dub3bkaln/image/upload/v1772265501/GPA_uvir2v.png",
     link: "https://abdulbasit219.github.io/GpaCal/",
   },
 ];
@@ -94,9 +87,9 @@ const Projects = () => {
             whileHover={{ y: -8 }}
             className="group relative rounded-xl overflow-hidden shadow-lg bg-white dark:bg-gray-800 dark:shadow-gray-700 transition-all duration-300"
           >
-            {/* Image */}
+            {/* imageUrl */}
             <img
-              src={project.image}
+              src={project.imageUrl}
               alt={project.name}
               className="w-full h-52 object-cover transition-transform duration-500 group-hover:scale-110"
             />
